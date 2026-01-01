@@ -1,4 +1,4 @@
-/*       this repository is all about the data structure and algorithms pattern wise problem solving          */
+/* this repository is all about the data structure and algorithms pattern wise problem solving  */
 #include<iostream>
 using namespace std;
 
