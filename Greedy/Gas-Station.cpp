@@ -3,6 +3,7 @@ using namespace std;
 
 class Solution {
 public:
+// gas station is in circular pattern.
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
         int total = 0;
         int tank = 0;
