@@ -6,9 +6,10 @@ public:
     int climbStairs(int n) {
         if (n <= 2)
             return n;
-
-        int prev1 = 1;  // ways to reach step 1
-        int prev2 = 2;  // ways to reach step 2
+     
+            // ways to reach the next state//
+        int prev1 = 1; 
+        int prev2 = 2;  
         
         for (int i = 3; i <= n; i++) {
             int current = prev1 + prev2;
