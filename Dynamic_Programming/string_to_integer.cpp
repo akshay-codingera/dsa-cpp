@@ -1,6 +1,5 @@
 #include <iostream>
 #include <climits>
-#include <bits/stdc++.h>
 using namespace std;
 
 int myAtoi(string s) {
