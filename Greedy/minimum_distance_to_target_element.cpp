@@ -1,8 +1,9 @@
+#include <bits/stdc++.h>
 #include<iostream>
 #include<vector>
-#include<cmath>
+#include<cstdlib>
 #include<algorithm>
-#include<bit/stdc++.h>
+#include<climits>
 using namespace std;
 class Solution {
 public:
@@ -11,7 +12,7 @@ public:
 
         for(int i = 0; i < nums.size(); i++) {
             if(nums[i] == target) {
-                minDist = min(minDist, abs(i - start));
+                minDist = std::min(minDist, std::abs(i - start));
             }
         }
 
