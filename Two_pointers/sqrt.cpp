@@ -22,6 +22,7 @@ public:
             res.push_back((sum % 2) + '0');
             carry = sum / 2;
         }
+    // sqri is based on the square root of the number of whtever 
 
         reverse(res.begin(), res.end());
         return res;
