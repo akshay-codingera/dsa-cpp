@@ -1,0 +1,60 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    bool isSafe(int row, int col, vector<string>& board, int n) {
+
+        for (int j = col; j >= 0; j--) {
+            if (board[row][j] == 'Q')
+                return false;
+        }
+
+        for (int i = row, j = col; i >= 0 && j >= 0; i--, j--) {
+            if (board[i][j] == 'Q')
+                return false;
+        }
+
+        for (int i = row, j = col; i < n && j >= 0; i++, j--) {
+            if (board[i][j] == 'Q')
+                return false;
+        }
+
+        return true;
+    }
+
+    void solve(int col, vector<string>& board, vector<vector<string> >& ans, int n) {
+        if (col == n) {
+            ans.push_back(board);
+            return;
+        }
+
+        for (int row = 0; row < n; row++) {
+            if (isSafe(row, col, board, n)) {
+                board[row][col] = 'Q';
+                solve(col + 1, board, ans, n);
+                board[row][col] = '.';
+            }
+        }
+    }
+
+    vector<vector<string> > solveNQueens(int n) {
+        vector<vector<string> > ans;
+        vector<string> board(n, string(n, '.'));
+        solve(0, board, ans, n);
+        return ans;
+    }
+};
+
+int main() {
+    Solution obj;
+    vector<vector<string> > res = obj.solveNQueens(8);
+
+    for (int i = 0; i < res.size(); i++) {
+        for (int j = 0; j < res[i].size(); j++)
+            cout << res[i][j] << endl;
+        cout << endl;
+    }
+}
