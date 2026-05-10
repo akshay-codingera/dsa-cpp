@@ -18,13 +18,11 @@ public:
     {
         vector<string> arr;
 
-        // Convert numbers to strings
         for (int num : nums)
         {
             arr.push_back(to_string(num));
         }
 
-        // Sort according to custom comparator
         sort(arr.begin(), arr.end(), compare);
 
         // Handle case like [0,0]
