@@ -21,7 +21,7 @@ bool asteroidsDestroyed(int mass, vector<int>& asteroids) {
 }
 
 int main() {
-    int mass = 10;
+      int mass = 10;
     vector<int> asteroids = {3, 9, 19, 5, 21};
 
     if (asteroidsDestroyed(mass, asteroids))
