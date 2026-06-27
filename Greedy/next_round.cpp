@@ -8,6 +8,7 @@ int main()
     cin >> n;// number of input 
     int threshold;
     cin >> threshold;
+    threshold += -1;
     int count = 0;
 
     int number[n+1];
