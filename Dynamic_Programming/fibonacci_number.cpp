@@ -15,3 +15,10 @@ public:
         return solve(n, dp);
     }
 };
+
+int main()
+{
+    int n; cin >> n; 
+    Solution s;
+    cout << s.fib(n);
+}
