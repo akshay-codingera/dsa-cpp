@@ -1,0 +1,1 @@
+// tree as a data structure is a hierachical data structure 
