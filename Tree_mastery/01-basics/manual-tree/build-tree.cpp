@@ -13,7 +13,7 @@ struct Node{
         left = NULL;
         right = NULL;
     }
-};
+};GHJHGGJK
 
 void buildTree(Node* root)
 {
