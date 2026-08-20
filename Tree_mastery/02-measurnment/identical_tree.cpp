@@ -24,7 +24,7 @@ public:
     }
 };
 
-
+//execution part
 int main()
 {
 new class Solution();
