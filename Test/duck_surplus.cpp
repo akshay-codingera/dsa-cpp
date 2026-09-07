@@ -22,7 +22,7 @@ int main()
         {
             if(a[i] <= sum)
             sum += a[i];
-            
+            else 
             sum = a[i];
 
             ans = max(ans, sum);
