@@ -1,7 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-#update
 struct TreeNode
 {
     int data;
