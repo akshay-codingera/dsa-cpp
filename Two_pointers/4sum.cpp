@@ -6,7 +6,7 @@ public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         vector<vector<int>> result;
         int n = nums.size();
-        
+        // i think its too much cleaned i will try to rewrite it once again by myself 
         sort(nums.begin(), nums.end());
 
         for (int i = 0; i < n - 3; i++) {
